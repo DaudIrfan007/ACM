@@ -1,133 +1,63 @@
-import Section from "./Section";
+import React from 'react';
 import Heading from "./Heading";
-import { service1, service2, service3, check } from "../assets";
-import { brainwaveServices, brainwaveServicesIcons } from "../constants";
-import {
-  PhotoChatMessage,
-  Gradient,
-  VideoBar,
-  VideoChatMessage,
-} from "./design/Services";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCodepen, faInstagram, faDribbble, faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
-import Generating from "./Generating";
-
-const Services = () => {
+const Card = ({ name, bgImage, hoverBgImage }) => {
   return (
-    <Section id="how-to-use">
-      <div className="container">
-        <Heading
-          title="Generative AI made for creators."
-          text="Brainwave unlocks the potential of AI-powered applications"
-        />
-
-        <div className="relative">
-          <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]">
-            <div className="absolute top-0 left-0 w-full h-full pointer-events-none md:w-3/5 xl:w-auto">
-              <img
-                className="w-full h-full object-cover md:object-right"
-                width={800}
-                alt="Smartest AI"
-                height={730}
-                src={service1}
-              />
-            </div>
-
-            <div className="relative z-1 max-w-[17rem] ml-auto">
-              <h4 className="h4 mb-4">Smartest AI</h4>
-              <p className="body-2 mb-[3rem] text-n-3">
-                Brainwave unlocks the potential of AI-powered applications
-              </p>
-              <ul className="body-2">
-                {brainwaveServices.map((item, index) => (
-                  <li
-                    key={index}
-                    className="flex items-start py-4 border-t border-n-6"
-                  >
-                    <img width={24} height={24} src={check} />
-                    <p className="ml-4">{item}</p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <Generating className="absolute left-4 right-4 bottom-4 border-n-1/10 border lg:left-1/2 lg-right-auto lg:bottom-8 lg:-translate-x-1/2" />
-          </div>
-
-          <div className="relative z-1 grid gap-5 lg:grid-cols-2">
-            <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden">
-              <div className="absolute inset-0">
-                <img
-                  src={service2}
-                  className="h-full w-full object-cover"
-                  width={630}
-                  height={750}
-                  alt="robot"
-                />
-              </div>
-
-              <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
-                <h4 className="h4 mb-4">Photo editing</h4>
-                <p className="body-2 mb-[3rem] text-n-3">
-                  Automatically enhance your photos using our AI app&apos;s
-                  photo editing feature. Try it now!
-                </p>
-              </div>
-
-              <PhotoChatMessage />
-            </div>
-
-            <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
-              <div className="py-12 px-4 xl:px-8">
-                <h4 className="h4 mb-4">Video generation</h4>
-                <p className="body-2 mb-[2rem] text-n-3">
-                  The world’s most powerful AI photo and video art generation
-                  engine. What will you create?
-                </p>
-
-                <ul className="flex items-center justify-between">
-                  {brainwaveServicesIcons.map((item, index) => (
-                    <li
-                      key={index}
-                      className={`rounded-2xl flex items-center justify-center ${
-                        index === 2
-                          ? "w-[3rem] h-[3rem] p-0.25 bg-conic-gradient md:w-[4.5rem] md:h-[4.5rem]"
-                          : "flex w-10 h-10 bg-n-6 md:w-15 md:h-15"
-                      }`}
-                    >
-                      <div
-                        className={
-                          index === 2
-                            ? "flex items-center justify-center w-full h-full bg-n-7 rounded-[1rem]"
-                            : ""
-                        }
-                      >
-                        <img src={item} width={24} height={24} alt={item} />
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
-                <img
-                  src={service3}
-                  className="w-full h-full object-cover"
-                  width={520}
-                  height={400}
-                  alt="Scary robot"
-                />
-
-                <VideoChatMessage />
-                <VideoBar />
-              </div>
-            </div>
-          </div>
-
-          <Gradient />
+    <div className="relative w-[300px] h-[379px] bg-black rounded-lg shadow-[0_70px_63px_-60px_rgba(0,0,0,1)] transition-all duration-800 overflow-hidden group">
+      <div className={`absolute inset-0 rounded-lg transition-all duration-1000 border-2 border-transparent group-hover:border-white`}>
+        <h2 className="font-sans text-white text-left mt-5 ml-5 opacity-0 transition-opacity duration-1000 group-hover:opacity-100">{name}</h2>
+        <div className="absolute top-[226px] left-[1.5rem] transform -translate-x-1/2 flex flex-col items-left justify-around h-[130px] opacity-0 transition-opacity duration-1000 group-hover:opacity-100">
+          <FontAwesomeIcon icon={faCodepen} className="text-white" />
+          <FontAwesomeIcon icon={faInstagram} className="text-white" />
+          <FontAwesomeIcon icon={faDribbble} className="text-white" />
+          <FontAwesomeIcon icon={faTwitter} className="text-white" />
+          <FontAwesomeIcon icon={faFacebook} className="text-white" />
         </div>
       </div>
-    </Section>
+      <style jsx>{`
+        .group:hover {
+          background-image: url(${hoverBgImage});
+          background-position: left center;
+          background-size: 600px;
+        }
+        .group {
+          background-image: url(${bgImage});
+          background-position: center center;
+          background-size: 300px;
+        }
+      `}</style>
+    </div>
   );
 };
 
-export default Services;
+const App = () => {
+  return (
+    <>
+   <Heading
+          className="md:max-w-md lg:max-w-2xl"
+          title="Meet Our Team"
+        />
+    <div className="container mx-auto h-screen max-w-[1280px] flex justify-around items-left">
+      <Card
+        name="Al Pacino"
+        bgImage="https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg"
+        hoverBgImage="https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg"
+      />
+      <Card
+        name="Ben Stiller"
+        bgImage="https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg"
+        hoverBgImage="https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg"
+      />
+      <Card
+        name="Patrick Stewart"
+        bgImage="https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg"
+        hoverBgImage="https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg"
+      />
+    </div>
+    </>
+  );
+};
+
+export default App;
