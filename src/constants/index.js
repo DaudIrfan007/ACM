@@ -49,8 +49,8 @@ export const navigation = [
   },
   {
     id: "2",
-    title: "Join Us",
-    url: "#how-to-use",
+    title: "Vision & Mission",
+    url: "#mission",
   },
   {
     id: "3",
@@ -128,21 +128,18 @@ export const roadmap = [
 ];
 
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  "Embrace | Experience | Evolve";
 
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
-    text: collabText,
+    title: "Mission",
+    text: "ACM is dedicated to advancing computing through open information exchange and promoting high ethical standards for professional and public interests..",
   },
   {
     id: "1",
-    title: "Smart Automation",
-  },
-  {
-    id: "2",
-    title: "Top-notch Security",
+    title: "Vision",
+    text: "To remain the premier global computing society.",
   },
 ];
 
@@ -244,16 +241,16 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Techno Con",
+    text: "A vibrant tech showcase where innovation meets creativity.",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Scale-Up Program",
+    text: "Workshops and mentorship for aspiring tech students.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -261,16 +258,16 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    title: "FYP Exhibition",
+    text: "A platform for students to present their innovative final year projects.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
   {
     id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Inmic International Conferrence",
+    text: "A global conference on the latest tech trends and research.",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
@@ -278,16 +275,16 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Clash Of Coders",
+    text: "A fast-paced coding competition for tech enthusiasts.",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Agile Pakistan",
+    text: "Practical workshops on agile project management techniques.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
