@@ -32,7 +32,7 @@ const Header = () => {
 
   return (
     <div
-    className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:bg-[#03346E] lg:backdrop-blur-sm ${
+    className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 bg-[#FFFFFF] lg:bg-[#FFFFFF] lg:backdrop-blur-sm ${
       openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
     }`}
   >
@@ -55,7 +55,7 @@ const Header = () => {
               className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
                 item.onlyMobile ? "lg:hidden" : ""
               } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
-                item.url === pathname.hash ? "z-2 lg:text-n-1" : "lg:text-n-1/50"
+                item.url === pathname.hash ? "z-2 lg:text-n-1" : "lg:text-n-14"
               } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
             >
               {item.title}

@@ -22,7 +22,7 @@ export default {
           1: "#26242C",
         },
         n: {
-          1: "#FFFFFF",
+          1: "#29bfff",
           2: "#CAC6DD",    
           3: "#ADA8C3",
           4: "#757185",
@@ -35,7 +35,7 @@ export default {
           11: "#1B1B2E",
           12: "#2E2A41",
           13: "#6C7275",
-          
+          14: "#03346E",
         },
       },
       fontFamily: {

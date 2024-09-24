@@ -19,7 +19,7 @@
 
 @layer base {
   body {
-    @apply font-sans bg-[#D1E9F6] text-n-1 text-base;
+    @apply font-sans bg-[#eff9ff] text-n-1 text-base;
   }
 }
 

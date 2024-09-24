@@ -41,7 +41,7 @@ const App = () => {
           title="Meet Our Team "
         />
     <div className="container mx-auto h-[50vh] max-w-[1280px] flex flex-col items-center justify-center space-y-4">
-    <div className="flex justify-around space-x-4 md:flex:flex-col">
+    <div className="flex justify-around space-x-4 ">
           <Card
             name="Sir Mohsin"
             bgImage="https://ucp.edu.pk/wp-content/uploads/2017/04/Mr.-Mohsin-Sami.jpg"
