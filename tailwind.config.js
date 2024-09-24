@@ -8,10 +8,10 @@ export default {
     extend: {
       colors: {
         lightBlue: {
-          DEFAULT: "#A0D3E8",
+          DEFAULT: "#ffffff",
         },
         color: {
-          1: "#021526",
+          1: "#6EACDA",
           2: "#FFC876",
           3: "#FF776F",
           4: "#7ADB78",
@@ -35,6 +35,7 @@ export default {
           11: "#1B1B2E",
           12: "#2E2A41",
           13: "#6C7275",
+          
         },
       },
       fontFamily: {

@@ -35,27 +35,49 @@ const Card = ({ name, bgImage, hoverBgImage }) => {
 const App = () => {
   return (
     <>
+    <section id='ourteam'>
    <Heading
           className="md:max-w-md lg:max-w-2xl"
-          title="Meet Our Team"
+          title="Meet Our Team "
         />
-    <div className="container mx-auto h-screen max-w-[1280px] flex justify-around items-left">
-      <Card
-        name="Al Pacino"
-        bgImage="https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg"
-        hoverBgImage="https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg"
-      />
-      <Card
-        name="Ben Stiller"
-        bgImage="https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg"
-        hoverBgImage="https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg"
-      />
-      <Card
-        name="Patrick Stewart"
-        bgImage="https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg"
-        hoverBgImage="https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg"
-      />
+    <div className="container mx-auto h-[50vh] max-w-[1280px] flex flex-col items-center justify-center space-y-4">
+    <div className="flex justify-around space-x-4 md:flex:flex-col">
+          <Card
+            name="Sir Mohsin"
+            bgImage="https://ucp.edu.pk/wp-content/uploads/2017/04/Mr.-Mohsin-Sami.jpg"
+            hoverBgImage="https://ucp.edu.pk/wp-content/uploads/2017/04/Mr.-Mohsin-Sami.jpg"
+          />
+          <Card
+            name="Ben Stiller"
+            bgImage="https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg"
+            hoverBgImage="https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg"
+          />
+          <Card
+            name="Patrick Stewart"
+            bgImage="https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg"
+            hoverBgImage="https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg"
+          />
+        </div>
+        {/* <div className="flex justify-around space-x-4">
+          <Card
+            name="Sir Mohsin"
+            bgImage="https://ucp.edu.pk/wp-content/uploads/2017/04/Mr.-Mohsin-Sami.jpg"
+            hoverBgImage="https://ucp.edu.pk/wp-content/uploads/2017/04/Mr.-Mohsin-Sami.jpg"
+          />
+          <Card
+            name="Ben Stiller"
+            bgImage="https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg"
+            hoverBgImage="https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg"
+          />
+          <Card
+            name="Patrick Stewart"
+            bgImage="https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg"
+            hoverBgImage="https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg"
+          />
+        </div> */}
+      
     </div>
+    </section>
     </>
   );
 };
