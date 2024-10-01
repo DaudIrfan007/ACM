@@ -1,7 +1,5 @@
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
-
-import { brainwave } from "../assets";
 import ACM from "../assets/ACM.png"
 import { navigation } from "../constants";
 import Button from "./Button";
@@ -33,48 +31,40 @@ const Header = () => {
   return (
     <div
     className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 bg-[#FFFFFF] lg:bg-[#FFFFFF] lg:backdrop-blur-sm ${
-      openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
+      openNavigation ? "bg-[#ffffff]" : "bg-[#ffffff] backdrop-blur-sm"
     }`}
   >
     <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
       <a className="block w-[12rem] xl:mr-8" href="#hero">
-        <img src={ACM} width={100} height={20} alt="ACM" />
+        <img src={ACM} width={120} height={30} alt="ACM" />
       </a>
   
       <nav
         className={`${
           openNavigation ? "flex" : "hidden"
-        } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
+        } fixed top-[8rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
       >
         <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
           {navigation.map((item) => (
-            <a
-              key={item.id}
-              href={item.url}
-              onClick={handleClick}
-              className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
-                item.onlyMobile ? "lg:hidden" : ""
-              } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
-                item.url === pathname.hash ? "z-2 lg:text-n-1" : "lg:text-n-14"
-              } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
-            >
-              {item.title}
-            </a>
+       <a
+       key={item.id}
+       href={item.url}
+       onClick={handleClick}
+       className={`block relative font-code text-xl uppercase text-n-1 transition-colors hover:text-color-3 ${
+         item.onlyMobile ? "lg:hidden" : ""
+       } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-[20px] lg:font-semibold ${
+         item.url === pathname.hash ? "z-2 lg:text-n-1" : "lg:text-n-14"
+       } lg:leading-5 lg:hover:text-color-5 xl:px-12`}
+     >
+       {item.title}
+     </a>
           ))}
         </div>
   
         <HamburgerMenu />
       </nav>
   
-      <a
-        href="#signup"
-        className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
-      >
-        New account
-      </a>
-      <Button className="hidden lg:flex" href="#login">
-        Sign in
-      </Button>
+    
   
       <Button
         className="ml-auto lg:hidden"
