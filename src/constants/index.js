@@ -4,8 +4,6 @@ import {
   benefitIcon3,
   benefitIcon4,
   benefitImage2,
-  chromecast,
-  disc02,
   discord,
   discordBlack,
   facebook,
@@ -22,11 +20,8 @@ import {
   plusSquare,
   protopie,
   raindrop,
-  recording01,
-  recording03,
   searchMd,
   slack,
-  sliders04,
   telegram,
   twitter,
   yourlogo,
@@ -36,17 +31,17 @@ export const navigation = [
   {
     id: "0",
     title: "About Us",
-    url: "#features",
+    url: "#aboutus",
   },
   {
     id: "1",
     title: "Contact Us",
-    url: "#pricing",
+    url: "#contactus",
   },
   {
     id: "2",
     title: "Vision & Mission",
-    url: "#mission",
+    url: "#mission$vission",
   },
   {
     id: "3",
@@ -61,17 +56,7 @@ export const notificationImages = [notification4, notification3, notification2];
 
 export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 
-
-export const brainwaveServicesIcons = [
-  recording03,
-  recording01,
-  disc02,
-  chromecast,
-  sliders04,
-];
-
-export const collabText =
-  "Embrace | Experience | Evolve";
+export const collabText = "Embrace | Experience | Evolve";
 
 export const collabContent = [
   {
@@ -145,8 +130,6 @@ export const collabApps = [
   },
 ];
 
-
-
 export const benefits = [
   {
     id: "0",
@@ -167,8 +150,8 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "FYP Exhibition",
-    text: "A platform for students to present their innovative final year projects.",
+    title: "Clash Of Coders",
+    text: "A fast-paced coding competition for tech enthusiasts.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
@@ -184,8 +167,8 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Clash Of Coders",
-    text: "A fast-paced coding competition for tech enthusiasts.",
+    title: "FYP Exhibition",
+    text: "A platform for students to present their innovative final year projects.",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,

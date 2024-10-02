@@ -1,18 +1,15 @@
-import { brainwaveSymbol, check } from "../assets";
-// import {ACMimg} from "../assets"
+import { check } from "../assets";
 import { collabApps, collabContent, collabText } from "../constants";
-import Button from "./Button";
+import ACM from "../assets/ACM/ACM.png";
 import Section from "./Section";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
 
 const Collaboration = () => {
   return (
-    <Section id={"mission"} crosses>
+    <Section id={"mission$vission"} crosses>
       <div className="container lg:flex">
         <div className="max-w-[25rem]">
-          <h2 className="h2 mb-4 md:mb-8">
-            Our Mission and Vision
-          </h2>
+          <h2 className="h2 mb-4 md:mb-8">Our Mission and Vision</h2>
 
           <ul className="max-w-[22rem] mb-10 md:mb-14 ">
             {collabContent.map((item) => (
@@ -37,13 +34,8 @@ const Collaboration = () => {
           <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 md:scale-100">
             <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full">
               <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
-                <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
-                  {/* <img
-                    src={ACMimg}
-                    width={48}
-                    height={48}
-                    alt="brainwave"
-                  /> */}
+                <div className="flex items-center justify-center w-full h-full bg-n-1 rounded-full">
+                  <img src={ACM} width={100} height={100} alt="ACM Logo" />
                 </div>
               </div>
             </div>
