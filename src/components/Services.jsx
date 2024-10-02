@@ -14,47 +14,47 @@ const ProfileCard = () => {
       name: "Mohsin Sami",
       title: "Patron",
       image: Sir,
-      message: "This is Mohsin Sami, the Patron of our team.", // Add a message for hover
+      message: "Hi, I'm Mohsin Sami, the Patron of ACM", // Add a message for hover
     },
     {
       name: "Ramsha Saeed",
       title: "Co-Patron",
       image: Mam,
-      message: "This is Ramsha Saeed, the Co-Patron of our team.", // Add a message for hover
+      message: "Hi, I'm Ramsha Saeed, the Co-Patron of ACM", // Add a message for hover
     },
     {
       name: "Abdul Hanan Khan",
       title: "Vice President",
       image: Hanan,
-      message: "This is Abdul Hanan Khan, our Vice President.", // Add a message for hover
+      message: "Hi, I'm Abdul Hanan Khan, the Vice President of ACM", // Add a message for hover
     },
     {
       name: "Muhmmad Salar Haris ",
       title: "President",
       image: Salar,
-      message: "This is Muhmmad Salar Haris, our President.", // Add a message for hover
+      message: "Hi, I'm Muhmmad Salar Haris, the President of ACM", // Add a message for hover
     },
     {
       name: "Shireen Iftikhar",
       title: "Vice President",
       image: Shireen,
-      message: "This is Shireen Iftikhar, our Vice President.", // Add a message for hover
+      message: "Hi, I'm Shireen Iftikhar, the Vice President of ACM", // Add a message for hover
     },
   ];
 
   return (
     <section id="ourteam">
-      <div className="flex flex-col items-center text-center">
+      <div className="flex flex-col items-center text-center mb-12">
         <h1 className="text-n-1 lg:text-[60px] mb-8 text-[40px] mt-[10vh]">
           Meet Our Team
         </h1>
 
         {/* 2 team members on top */}
-        <div className="flex justify-center w-full">
+        <div className="flex justify-center w-full ">
           {teamMembers.slice(0, 2).map((member, index) => (
             <div
               key={index}
-              className="flex-col p-4 mx-12 bg-inherit w-[35vh] h-[35vh] flex justify-center items-center"
+              className="flex-col p-4 lg:mx-12 bg-inherit lg:w-[35vh] lg:h-[35vh] w-[50vh] h-[20vh] flex justify-center items-center "
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
@@ -63,10 +63,10 @@ const ProfileCard = () => {
                 alt={member.name}
                 className="lg:w-[18vh] lg:h-[18vh] h-[8vh] w-[8vh] rounded-full object-cover transition duration-200 hover:scale-110"
               />
-              <div className="text-n-1 lg:text-lg text-sm font-bold mt-2">
+              <div className="text-n-1 lg:text-lg text-lg font-bold mt-2">
                 {member.name}
               </div>
-              <div className="text-n-1">{member.title}</div>
+              <div className="text-n-1 text-md lg:text-lg">{member.title}</div>
 
               {/* Message box shown on hover */}
               {hoveredIndex === index && (
@@ -86,23 +86,25 @@ const ProfileCard = () => {
         </div>
         {/* ---------------------------------------------------------------------------------------------------------------- */}
         {/* 3 team members on the bottom */}
-        <div className="flex justify-center w-full">
+        <div className="flex justify-center w-full ">
           {teamMembers.slice(2, 5).map((member, index) => (
             <div
               key={index}
-              className="flex-col p-4 mx-12 bg-inherit w-[35vh] h-[35vh] flex justify-center items-center"
+              className="flex-col p-4 mx:2 lg:mx-12 bg-inherit w-[33vh] h-[20vh] flex justify-center items-center"
               onMouseEnter={() => setHoveredIndex(index + 2)} // Adjust for the bottom row
               onMouseLeave={() => setHoveredIndex(null)}
             >
               <img
                 src={member.image}
                 alt={member.name}
-                className="w-[18vh] h-[18vh] rounded-full object-cover transition duration-200 hover:scale-110"
+                className="lg:w-[18vh] lg:h-[18vh] h-[7vh] w-[7vh] rounded-full object-cover transition duration-200 hover:scale-110"
               />
-              <div className="text-n-1 text-lg font-bold mt-2">
+              <div className="text-n-1 lg:text-lg text-sm font-bold mt-2">
                 {member.name}
               </div>
-              <div className="text-n-1">{member.title}</div>
+              <div className="text-n-1 text-[13px] lg:text-large">
+                {member.title}
+              </div>
 
               {/* Message box shown on hover */}
               {hoveredIndex === index + 2 && ( // Adjust for the bottom row
