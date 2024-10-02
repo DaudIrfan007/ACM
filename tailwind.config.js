@@ -42,6 +42,7 @@ export default {
         sans: ["var(--font-sora)", ...fontFamily.sans],
         code: "var(--font-code)",
         grotesk: "var(--font-grotesk)",
+        tiny: "var(--font-tiny)",
       },
       letterSpacing: {
         tagline: ".15em",
