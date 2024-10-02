@@ -22,13 +22,13 @@ import curve from "./hero/curve.png";
 
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
-import discord from "./collaboration/discord.png";
+import discord from "./collaboration/discord.webp";
 import figma from "./collaboration/figma.png";
 import framer from "./collaboration/framer.png";
 import notion from "./collaboration/notion.png";
 import photoshop from "./collaboration/photoshop.png";
-import protopie from "./collaboration/protopie.png";
-import raindrop from "./collaboration/raindrop.png";
+import protopie from "./collaboration/protopie.svg";
+import raindrop from "./collaboration/raindrop.svg";
 import slack from "./collaboration/slack.png";
 
 import notification1 from "./notification/image-1.png";

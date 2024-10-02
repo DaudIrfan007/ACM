@@ -4,9 +4,9 @@ import { socials } from "../constants";
 
 const Footer = () => {
   return (
-    <Section crosses className="!px-0 !py-10">
+    <Section id="contactus" crosses className="!px-0 !py-10 bg-white">
       <div className="container flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col">
-        <p className="caption text-n-1 lg:block">
+        <p className="caption text-n-6 lg:block">
           © {new Date().getFullYear()}. All rights reserved by Daud Irfan.
         </p>
 

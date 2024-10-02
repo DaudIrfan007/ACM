@@ -44,8 +44,8 @@ const ProfileCard = () => {
 
   return (
     <section id="ourteam">
-      <div className="flex flex-col items-center text-center mb-12">
-        <h1 className="text-n-1 lg:text-[60px] mb-8 text-[40px] mt-[10vh]">
+      <div className="flex flex-col items-center text-center mb-12 ">
+        <h1 className="text-n-1 lg:text-[60px] mb-10 lg:mb-12 text-[40px] mt-[10vh]">
           Meet Our Team
         </h1>
 
@@ -66,11 +66,11 @@ const ProfileCard = () => {
               <div className="text-n-1 lg:text-lg text-lg font-bold mt-2">
                 {member.name}
               </div>
-              <div className="text-n-1 text-md lg:text-lg">{member.title}</div>
+              <div className="text-n-1 text-sm ">{member.title}</div>
 
               {/* Message box shown on hover */}
               {hoveredIndex === index && (
-                <div className="absolute w-70 p-2 mt-2 bg-blue-400 border rounded shadow-lg">
+                <div className="absolute w-70 p-2 mt-20 bg-blue-400 border rounded shadow-lg border-black ">
                   <div className="flex items-center">
                     <img
                       src={member.image}
@@ -108,7 +108,7 @@ const ProfileCard = () => {
 
               {/* Message box shown on hover */}
               {hoveredIndex === index + 2 && ( // Adjust for the bottom row
-                <div className="absolute w-70 p-2 mx-2 bg-blue-400 border rounded shadow-lg">
+                <div className="absolute w-70 p-2 mt-20 bg-blue-400 border rounded shadow-lg">
                   <div className="flex items-center">
                     <img
                       src={member.image}

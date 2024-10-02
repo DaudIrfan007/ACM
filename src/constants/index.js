@@ -83,8 +83,8 @@ export const collabApps = [
     id: "1",
     title: "Notion",
     icon: notion,
-    width: 34,
-    height: 36,
+    width: 38,
+    height: 40,
   },
   {
     id: "2",
@@ -118,8 +118,8 @@ export const collabApps = [
     id: "6",
     title: "Framer",
     icon: framer,
-    width: 26,
-    height: 34,
+    width: 30,
+    height: 38,
   },
   {
     id: "7",
@@ -186,32 +186,20 @@ export const benefits = [
 export const socials = [
   {
     id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
+    title: "Instagram",
+    iconUrl: instagram,
+    url: "https://www.instagram.com/acm.ucp",
   },
   {
     id: "1",
-    title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
+    title: "Facebook",
+    iconUrl: facebook,
+    url: "https://www.facebook.com/UCP.ACM/",
   },
   {
     id: "2",
-    title: "Instagram",
-    iconUrl: instagram,
-    url: "#",
-  },
-  {
-    id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
-  },
-  {
-    id: "4",
-    title: "Facebook",
-    iconUrl: facebook,
-    url: "#",
+    title: "LinkedIn",
+    iconUrl: "https://www.svgrepo.com/show/391478/linkedin.svg",
+    url: "https://www.linkedin.com/company/acm-ucp-chapter",
   },
 ];
