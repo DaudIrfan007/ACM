@@ -2,20 +2,51 @@ import React, { useState, useEffect } from "react";
 
 const CustomCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [showCursor, setShowCursor] = useState(false); // Initially hidden
 
-  // Update the cursor's position based on mouse movement
+  // Update the cursor's position based on mouse or touch movement
   useEffect(() => {
     const handleMouseMove = (e) => {
-      setPosition({ x: e.clientX + 50, y: e.clientY + 50 });
+      setShowCursor(true); // Show cursor when mouse moves
+      setPosition({ x: e.clientX + 50, y: e.clientY + 55 });
+    };
+
+    const handleTouchMove = (e) => {
+      const touch = e.touches[0];
+      setPosition({ x: touch.clientX + 50, y: touch.clientY + 50 });
+    };
+
+    const handleTouchStart = (e) => {
+      setShowCursor(true); // Show cursor when the screen is touched
+      const touch = e.touches[0];
+      setPosition({ x: touch.clientX + 50, y: touch.clientY + 50 });
+    };
+
+    const handleTouchEnd = () => {
+      setShowCursor(false); // Hide cursor when touch ends
+    };
+
+    const handleMouseLeave = () => {
+      setShowCursor(false); // Hide cursor when mouse leaves window (desktop only)
     };
 
     window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("mouseleave", handleMouseLeave);
+    window.addEventListener("touchmove", handleTouchMove);
+    window.addEventListener("touchstart", handleTouchStart);
+    window.addEventListener("touchend", handleTouchEnd);
 
-    // Cleanup event listener on component unmount
+    // Cleanup event listeners on component unmount
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("mouseleave", handleMouseLeave);
+      window.removeEventListener("touchmove", handleTouchMove);
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchend", handleTouchEnd);
     };
   }, []);
+
+  if (!showCursor) return null; // Do not render cursor if not shown
 
   return (
     <div

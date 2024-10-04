@@ -31,9 +31,9 @@ const App = () => {
           <Services />
           <Contact />
           <Footer />
+          <CustomCursor />
         </div>
       )}
-      <CustomCursor />
       <ButtonGradient />
     </>
   );

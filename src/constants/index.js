@@ -22,11 +22,12 @@ import {
   raindrop,
   searchMd,
   slack,
-  telegram,
-  twitter,
-  yourlogo,
 } from "../assets";
-
+import technoCon from "../assets/ACM/technoCon.png";
+import ieeeucp from "../assets/ACM/ieeeucp.png";
+import ucp from "../assets/ACM/ucp.png";
+import cssucp from "../assets/ACM/cssucp.png";
+import mlsaucp from "../assets/ACM/mlsaucp.png";
 export const navigation = [
   {
     id: "0",
@@ -54,7 +55,7 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+export const companyLogos = [technoCon, ieeeucp, ucp, cssucp, mlsaucp];
 
 export const collabText = "Embrace | Experience | Evolve";
 
