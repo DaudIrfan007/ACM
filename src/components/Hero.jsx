@@ -23,7 +23,7 @@ const Hero = () => {
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h1 className="h1 mb-6 lg:text-[9vh] text-[4vh]">
-            Explore! the Possibilities with {` `}
+            Explore the Possibilities with {` `}
             <span className="inline-block relative">
               ACM UCP Chapter{" "}
               <img
@@ -39,8 +39,8 @@ const Hero = () => {
             Unlock the Future of Computing with ACM: Connect. Collaborate.
             Create.
           </p>
-          <Button href="#contactus" white>
-            Contact Us
+          <Button href="https://docs.google.com/forms/d/e/1FAIpQLSdIFCKOho-3fXQo3SYs0DWBPoFwG6-Rd-j9wyO5Uhv5n3rr3w/viewform" white>
+            Register Now
           </Button>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
