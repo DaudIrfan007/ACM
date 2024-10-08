@@ -49,11 +49,11 @@ export const navigation = [
     title: "Our Team",
     url: "#ourteam",
   },
-  {
-    id: "4",
-    title: "Registration",
-    url: "https://forms.gle/Q9ENLfNt8syCAb6D7",
-  },
+  // {
+  //   id: "4",
+  //   title: "Registration",
+  //   url: "https://forms.gle/Q9ENLfNt8syCAb6D7",
+  // },
 ];
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];

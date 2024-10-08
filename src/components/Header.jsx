@@ -1,4 +1,3 @@
-import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import ACM from "../assets/ACM/ACM.png";
 import { navigation } from "../constants";
@@ -8,7 +7,6 @@ import { HamburgerMenu } from "./design/Header";
 import { useState } from "react";
 
 const Header = () => {
-  const pathname = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
 
   const toggleNavigation = () => {
@@ -50,13 +48,9 @@ const Header = () => {
                 key={item.id}
                 href={item.url}
                 onClick={handleClick}
-                className={`block relative font-code text-xl uppercase text-n-1 transition-colors hover:text-color-3 ${
+                className={`block relative font-code text-xl uppercase lg:text-n-9 transition-colors hover:text-color-3 ${
                   item.onlyMobile ? "lg:hidden" : ""
-                } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-[15px] lg:font-semibold ${
-                  item.url === pathname.hash
-                    ? "z-2 lg:text-n-2"
-                    : "lg:text-n-14"
-                } lg:leading-5 lg:hover:text-color-5 xl:px-12`}
+                } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-[15px] lg:font-semibold lg:leading-5 lg:hover:text-color-5 xl:px-12`}
               >
                 {item.title}
               </a>
