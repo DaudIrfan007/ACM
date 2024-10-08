@@ -9,12 +9,8 @@ import Team from "../assets/ACM/Team.jpg";
 import Notification from "./Notification";
 import CompanyLogos from "./CompanyLogos";
 
-const Hero = ({ buttons }) => {
-  // Receive buttons as a prop
+const Hero = () => {
   const parallaxRef = useRef(null);
-
-  // Get the first button if it exists
-  const firstButton = buttons[0];
 
   return (
     <Section
@@ -43,12 +39,9 @@ const Hero = ({ buttons }) => {
             Unlock the Future of Computing with ACM: Connect. Collaborate.
             Create.
           </p>
-          {/* Render the first button if it exists */}
-          {firstButton && (
-            <Button href={firstButton.url} white>
-              {firstButton.name}
-            </Button>
-          )}
+          <Button href="https://docs.google.com/forms/d/e/1FAIpQLSdIFCKOho-3fXQo3SYs0DWBPoFwG6-Rd-j9wyO5Uhv5n3rr3w/viewform" white>
+            Register Now
+          </Button>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
